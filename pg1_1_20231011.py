@@ -28,10 +28,10 @@ DiccionarioColor = [x for x in listaColores if x[color] == color][0]
         
 while True:
     if parpadeo == "0":
-        LED(DiccionarioColor.values(1)).on()
+        LED(list(DiccionarioColor.values())[1]).on()
     elif parpadeo == "1":
-        LED(DiccionarioColor.values(1)).on()
+        LED(list(DiccionarioColor.values())[1]).on()
         sleep(0.5)
-        LED(DiccionarioColor.values(1)).off()
+        LED(list(DiccionarioColor.values())[1]).off()
         sleep(0.5)
 # %%
