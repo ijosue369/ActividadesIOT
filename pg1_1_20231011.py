@@ -21,11 +21,12 @@ listaColores = [
         "Salida" : 21
     }
 ]
-    
+
+color = input("Selecciona el color: ")
+parpadeo = input("¿Parpadeo? (0 = no, 1 = sí): ")
+DiccionarioColor = [x for x in listaColores if x[color] == color][0]
+        
 while True:
-    color = input("Selecciona el color: ")
-    parpadeo = input("¿Parpadeo? (0 = no, 1 = sí): ")
-    DiccionarioColor = [x for x in listaColores if x[color] == color][0]
     if parpadeo == "0":
         LED(DiccionarioColor.values(1)).on()
     elif parpadeo == "1":
