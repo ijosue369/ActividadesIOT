@@ -20,13 +20,13 @@ while True:
         ledR.off()
         ledG.on()
         ledY.off()
-    elif (cpuPorcentaje >= 10)&(cpuPorcentaje <= 20):
+    elif cpuPorcentaje > 10 and cpuPorcentaje <= 20:
         ledR.off()
         ledG.off()
         ledY.on()
     elif cpuPorcentaje > 20:
         ledG.off()
-        ledY.off()
+        ledG.off()
         ledR.on()
         sleep(1)
         ledR.off()
